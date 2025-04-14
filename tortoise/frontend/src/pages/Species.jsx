@@ -1,29 +1,25 @@
 import React, { useContext, useEffect, useState } from 'react'
-import {useNavigate, useParams} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import {AppContext} from '../context/AppContext'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 const Species = () => {
-  const { speciality } = useParams()
   const{tortoises} = useContext(AppContext)
-  const [filterDoc,setFilterDoc] = useState([])
+  const [filterTort,setFilterTort] = useState([])
   const navigate = useNavigate()
+
   const applyFilter = () => {
-    if(speciality) {
-      setFilterDoc(tortoises.filter(doc => doc.speciality === speciality))
-    }else {
-      setFilterDoc(tortoises)
-    }
+      setFilterTort(tortoises)
   }
   useEffect(()=>{
     applyFilter()
-  },[tortoises,speciality])
+  },[tortoises])
 
   return (
     <div>
           <div className='flex flex-wrap justify-center gap-4 mt-5'>
             {
-              filterDoc.map((item,index)=>(
+              filterTort.map((item,index)=>(
                 <div className='border border-primary rounded-xl overflow-hidden hover:translate-y-[-10px] transition-all duration-500 w-[250px]'>
                     <img className='w-full h-[150px] object-cover' src={item.image} alt="" />
                     <div className='p-4 sm:text-left text-center flex flex-row items-center justify-between'>

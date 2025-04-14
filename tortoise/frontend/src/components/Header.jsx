@@ -5,7 +5,6 @@ import { assets } from '../assets/assets';
 const Introduction = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-primary p-6 md:p-12 rounded-xl shadow-lg mt-8">
-      {/* Text Section */}
       <div className="md:w-1/2 text-center md:text-left space-y-8">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-[#f7e4bb]"
@@ -26,8 +25,6 @@ const Introduction = () => {
           Learn More
         </motion.button>
       </div>
-
-      {/* Image Section */}
       <div className="mt-6 md:mt-0 md:w-1/2 flex justify-center ml-10">
         <motion.img
           src={assets.header}

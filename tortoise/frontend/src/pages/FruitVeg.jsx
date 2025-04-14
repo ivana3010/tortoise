@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import { fruitvegetables } from '../assets/food/food';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import WarningIcon from '@mui/icons-material/Warning';
 import CancelIcon from '@mui/icons-material/Cancel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCarrot, faAppleAlt } from '@fortawesome/free-solid-svg-icons';
 
 const FruitVeg = () => {
-
+  const [sFilter,setSFilter] = useState (null);
+  const filtered = sFilter 
+  ? fruitvegetables.filter((item) => item.frequency === sFilter)
+  :fruitvegetables;
+  
   const getIcon = (status) => {
     switch (status) {
       case 'Safe to feed':
@@ -26,19 +24,19 @@ const FruitVeg = () => {
     <div>
       <h1 className='text-center font-courgette font-semibold text-[28px] text-primary mb-5 tracking-wide'>Fruits & Vegetables</h1>
         <div className="flex justify-center gap-6 mb-6">
-          <button className="min-w-[140px] text-primary font-normal opacity-90 text-lg rounded-full border border-primary px-6 py-2 transition duration-300 hover:bg-primary hover:text-white">
-          Safe to feed 
-          </button>
-          <button className="min-w-[140px] text-primary font-normal opacity-90 text-lg rounded-full border border-primary px-6 py-2 transition duration-300 hover:bg-primary hover:text-white">
-          Occasionally
-          </button>
-          <button className="min-w-[140px] text-primary font-normal opacity-90 text-lg rounded-full border border-primary px-6 py-2 transition duration-300 hover:bg-primary hover:text-white">
-          Do Not Feed
-          </button>
+          {["Safe to feed", "Occasionally", "Do not feed"].map((label) => (
+            <button
+              key={label}
+              onClick={() => setSFilter(label === sFilter ? null : label)}
+              className={`min-w-[140px] text-primary font-normal text-lg rounded-full border border-primary px-6 py-2 transition duration-300 hover:bg-primary hover:text-white
+              ${sFilter === label ? 'bg-primary text-white' : 'opacity-90'}`}>
+                {label}
+            </button>
+          ))}
         </div>
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 p-6">
-            {fruitvegetables.map((item) => (
+            {filtered.map((item) => (
               <div className="relative w-[280px] h-[200px] overflow-hidden rounded-xl shadow-md group">
               <img
                 src={item.image}

@@ -8,7 +8,7 @@ const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false)
     const [token, setToken] = useState(true)
     return (
-        <div className='flex items-center justify-between text-lg pt-3 pb-3 mb-10 border-b border-primary'>
+        <div className='flex items-center justify-between text-lg pt-3 pb-3 mb-6 border-b border-primary'>
             <img onClick={() => navigate('/')} className='w-[104px] cursor-pointer  rounded-full' src={assets.logobr1} alt="" />
             <ul className='hidden md:flex items-start gap-10 font-semibold text-primary pt-3'>
                 <NavLink
@@ -58,8 +58,8 @@ const NavBar = () => {
                             <div className='absolute top-0 right-0 pt-10 text-base font-medium text-gray-600 z-20 hidden group-hover:block '>
                                 <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
                                     <p onClick={() => navigate('faq')} className='hover:text-black cursor-pointer'>FAQ</p>
-                                    <p onClick={() => navigate('contact')} className='hover:text-black cursor-pointer'>Contact</p>
-                                    <p onClick={() => navigate('about')} className='hover:text-black cursor-pointer'>About me</p>
+                                    <p onClick={() => navigate('contact')} className='hover:text-black cursor-pointer'>About & Contact</p>
+                                    <p onClick={() => navigate('shop')} className='hover:text-black cursor-pointer'>Shop</p>
                                 </div>
                             </div>
                         </div>

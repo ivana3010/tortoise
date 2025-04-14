@@ -6,12 +6,13 @@ import Login from './pages/Login';
 import Food from './pages/Food';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
-import About from './pages/About';
+import Shop from './pages/Shop';
 import OneTortoise from './pages/OneTortoise';
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import FruitVeg from "./pages/FruitVeg";
 import GrassFlower from "./pages/GrassFlower";
+import Care from "./pages/Care";
 
 const App = () => {
   return (
@@ -26,10 +27,11 @@ const App = () => {
           <Route path="/species" element={<Species />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/one-tortoise/:tortId" element={<OneTortoise />} />
           <Route path="/fruitveg" element={<FruitVeg />} />
           <Route path="/grassflower" element={<GrassFlower />} />
+          <Route path="/care" element={<Care />} />
         </Routes>
         <Footer />
 

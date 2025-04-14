@@ -23,7 +23,7 @@ import strawberry from '../food/strawberry.jpg';
 import tomato from '../food/tomato.jpg';
 
 import bindweed from '../food/bindweed.jpg';
-import bluebell from '../food/tomato.jpg';
+import bluebell from '../food/bluebell.jpg';
 import chamomile from '../food/chamomile.jpg';
 import chia from '../food/chia.jpg';
 import clover from '../food/clover.jpg';

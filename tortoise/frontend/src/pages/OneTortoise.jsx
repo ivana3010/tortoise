@@ -29,7 +29,7 @@ const OneTortoise = () => {
         }
     }
     return (
-        <div className="space-y-14">
+        <div className="space-y-12">
             <div className=''>
                 <svg className="mx-auto block ml-56" width="800" height="150" xmlns="http://www.w3.org/2000/svg">
                     <path id="title" d="M -40 110 C 200 50, 600 50, 750 120" fill="transparent" />
@@ -39,7 +39,7 @@ const OneTortoise = () => {
                         </textPath>
                     </text>
                 </svg>
-                <div className="text-center mt-[-60px]">
+                <div className="text-center mt-[-52px]">
                     <p className='text-primary font-courgette text-3xl'>
                         About me
                     </p>
@@ -49,14 +49,13 @@ const OneTortoise = () => {
             <div className="flex justify-center">
                 <div className="w-full max-w-6xl bg-primary bg-opacity-10 p-6 rounded-xl shadow-md flex flex-col md:flex-row gap-6">
 
-                    {/* Leva sekcija - Taxonomy */}
+                  
                     <div className="flex-1 space-y-4 bg-primary bg-opacity-25 p-4 rounded-lg">
-                        {/* Ikonica ili naslov */}
                         <div className="flex items-center gap-2 mt-2">
                             <img src="/tortoise.svg" alt="Taxonomy" className="w-6 h-6" />
                             <h3 className="text-xl font-bold text-primary">Taxonomy</h3>
                         </div>
-                        {/* Lista */}
+                     
                         <ul className="space-y-2 text-lg">
                             {Object.entries(tortoise.taxonomy).map(([key, value]) => (
                                 <li key={key} className="flex gap-2 border-b border-primary">
@@ -66,8 +65,6 @@ const OneTortoise = () => {
                             ))}
                         </ul>
                     </div>
-
-                    {/* Srednji deo - Slajder */}
                     <div className="flex-1 flex justify-center">
                         <Swiper
                             modules={[Pagination, Navigation]}
@@ -84,21 +81,16 @@ const OneTortoise = () => {
                             ))}
                         </Swiper>
                     </div>
-
-
-                    {/* Desna sekcija - General Info */}
                     <div className="flex-1 space-y-4 mt-6">
-                        {/* Ikonica ili naslov */}
                         <div className="flex items-center gap-2">
                             <span className="text-primary text-2xl">
                                 🛈
                             </span>
                             <h3 className="text-xl font-bold text-primary">General Info</h3>
                         </div>
-                        {/* Lista */}
+                    
                         <ul className="space-y-2 text-lg">
                             <li className='border-b border-primary pb-1'><span className="font-semibold text-primary ">Size:</span> {tortoise.size}</li>
-
                             <li className='border-b border-primary pb-1'><span className="font-semibold text-primary">Lifespan:</span> {tortoise.lifespan}</li>
                             <li className='border-b border-primary pb-1'><span className="font-semibold text-primary">Weight:</span> {tortoise.weight}</li>
                             <li className='border-b border-primary pb-1'><span className="font-semibold text-primary">Diet:</span> {tortoise.diet}</li>
@@ -118,12 +110,6 @@ const OneTortoise = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-            {/* Mapa i tekst "Where do I live?" */}
             <h1 className=' flex justify-center font-courgette text-4xl text-primary' >Where do I live?</h1>
             <div className="flex flex-col md:flex-row items-center gap-6">
                 <img className="border border-primary rounded-md w-[800] h-96" src={tortoise.imagePlace} alt="" />
@@ -134,31 +120,7 @@ const OneTortoise = () => {
                     </p>
                 </div>
             </div>
-
-            {/* Generalni opis */}
             <h1 className="text-center text-4xl font-courgette text-primary mb-8">Habits and Lifestyle</h1>
-
-
-
-            <div className="relative ml-36 flex items-center justify-center w-[800px] h-[400px] rounded-lg overflow-hidden shadow-lg">
-
-                {/* Slika u pozadini */}
-                <img
-                    className="w-full h-full object-cover"
-                    src={tortoise.images?.[2] || tortoise.image}
-                    alt={tortoise.name}
-                />
-
-                {/* Overlay tekst */}
-                <div className="absolute inset-0 bg-primary/60 flex items-center justify-center p-6">
-                    <p className="text-white text-lg max-w-2xl text-center leading-relaxed">
-                        During the winter, Hermann's tortoises hibernate, returning to activity in late February. They are active in the daytime, and may, if necessary, be dormant for long periods in summer months. Early in the morning, they leave their night shelters, usually consisting of hollows protected by hedges or thick bushes, to warm their bodies basking in the sun. Then they roam about the meadows of their Mediterranean habitat, looking for food.
-                    </p>
-                </div>
-
-            </div>
-
-
             <div className='flex flex-col space-y-1 items-center'>
                 <svg width="500" height="50" xmlns="http://www.w3.org/2000/svg">
                     <path id="curve" d="M 50 100 C 150 0, 350 0, 450 100" fill="transparent" />
@@ -169,13 +131,11 @@ const OneTortoise = () => {
                     </text>
                 </svg>
                 <div className="mt-[-60px]">
-                    <p className='text-primary'>
+                    <button onClick={() => { navigate('/shop'); scrollTo(0, 0); }} className='text-primary'>
                         Shop here
-                    </p>
+                    </button>
                 </div>
             </div>
-
-            {/* Cancel dugme */}
             <div className="flex justify-center mt-8">
                 <button
                     className="flex items-center gap-2 bg-primary text-white hover:translate-y-[-5px] transition-all duration-300 rounded-full py-3 px-6"
