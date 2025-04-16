@@ -8,12 +8,12 @@ import { Checkbox, TextField } from '@mui/material';
 
 const Footer = () => {
     return (
-        <div 
-            className='relative rounded-lg mt-10 px-6 pt-9 bg-cover bg-center' 
-            style={{ backgroundImage: `url(${assets.futer})` }} 
+        <div
+            className='relative rounded-lg mt-10 px-6 pt-9 bg-cover bg-center'
+            style={{ backgroundImage: `url(${assets.futer})` }}
         >
             <div className='relative z-10'>
-                <div className='grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-10 text-sm'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-10 text-sm items-start'>
                     <div className='flex flex-col items-center sm:items-start text-primary text-2xl'>
                         <img className='mb-6 w-40' src={assets.logobr2} alt="Logo" />
                         <div className='flex gap-4 ml-3'>
@@ -22,6 +22,13 @@ const Footer = () => {
                             <XIcon className='cursor-pointer hover:scale-110 transition-transform' />
                             <YouTubeIcon className='cursor-pointer hover:scale-110 transition-transform' />
                         </div>
+                    </div>
+                    <div className="mt-4 ml-20 flex flex-col gap-6  text-primary text-sm font-medium">
+                        <a href="" className="hover:underline">Home</a>
+                        <a href="care" className="hover:underline">Care</a>
+                        <a href="food" className="hover:underline">Food</a>
+                        <a href="contact" className="hover:underline">About</a>
+                        <a href="contact" className="hover:underline">Contact</a>
                     </div>
 
                     <div className='flex flex-col items-center sm:items-start text-center sm:text-left mt-10'>

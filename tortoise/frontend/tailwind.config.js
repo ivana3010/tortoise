@@ -17,6 +17,7 @@ export default {
         bungee: ['Bungee Shade', 'cursive'],
         courgette: ['Courgette', 'sans-serif']
     },
+    
     },
   },
   plugins: [],

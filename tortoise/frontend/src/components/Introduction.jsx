@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Introduction = () => {
   return (
-    <div className="pt-20 pb-10">
+    <div id="introduction" className="pt-20 pb-10">
       <div className="max-w-screen-lg mx-auto text-center">
         <div className="flex items-center justify-center space-x-4">
           <img className='w-10 md:w-10' src={assets.tortoise} alt="Tortoise" />

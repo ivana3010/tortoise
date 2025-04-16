@@ -13,7 +13,7 @@ const NavBar = () => {
             <ul className='hidden md:flex items-start gap-10 font-semibold text-primary pt-3'>
                 <NavLink
                     className={({ isActive }) =>
-                        `py-1 px-3 rounded-md transition-all ${isActive
+                        `hover:underline py-1 px-3 rounded-md transition-all ${isActive
                             ? 'bg-primary text-white'
                             : ''  
                         }`
@@ -23,7 +23,7 @@ const NavBar = () => {
                 </NavLink>
 
                 <NavLink className={({ isActive }) =>
-                        `py-1 px-3 rounded-md transition-all ${isActive
+                        `hover:underline py-1 px-3 rounded-md transition-all ${isActive
                             ? 'bg-primary text-white'
                             : ''  
                         }`
@@ -32,7 +32,7 @@ const NavBar = () => {
                 </NavLink>
 
                 <NavLink className={({ isActive }) =>
-                        `py-1 px-3 rounded-md transition-all ${isActive
+                        `hover:underline py-1 px-3 rounded-md transition-all ${isActive
                             ? 'bg-primary text-white'
                             : ''  
                         }`
@@ -41,7 +41,7 @@ const NavBar = () => {
                 </NavLink>
 
                 <NavLink className={({ isActive }) =>
-                        `py-1 px-3 rounded-md transition-all ${isActive
+                        `hover:underline py-1 px-3 rounded-md transition-all ${isActive
                             ? 'bg-primary text-white'
                             : ''  
                         }`

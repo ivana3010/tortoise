@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { assets } from '../assets/assets';
+import { useNavigate } from 'react-router-dom';
 
 const Introduction = () => {
+  const navigate = useNavigate()
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-primary p-6 md:p-12 rounded-xl shadow-lg mt-8">
       <div className="md:w-1/2 text-center md:text-left space-y-8">
@@ -17,13 +19,16 @@ const Introduction = () => {
         <p className="text-lg text-[#f7e4bb]">
           Tortoises have been living on Earth for millions of years, and they have adapted to a variety of environments. Known for their slow pace and hard shells, they are resilient creatures that teach us about patience and survival.
         </p>
-        <motion.button
-          className="bg-[#f7e4bb] text-primary font-medium py-2 px-6 rounded-full transition"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Learn More
-        </motion.button>
+        <a href="#introduction" className="inline-block">
+          <motion.button
+            className="bg-[#f7e4bb] text-primary font-medium py-2 px-6 rounded-full transition"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Learn More
+          </motion.button>
+        </a>
+
       </div>
       <div className="mt-6 md:mt-0 md:w-1/2 flex justify-center ml-10">
         <motion.img

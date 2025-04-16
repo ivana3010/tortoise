@@ -1,11 +1,12 @@
-import AddIcon from '@mui/icons-material/Add';
 import { assets } from '../assets/assets'
-import React, { useDebugValue, useState } from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const DonationSection = () => {
     const [donationType, setDonationType] = useState('One Time')
     const [customAmount, setCustomAmount] = useState('')
     const [selectedCurrency, setSelectedCurrency] = useState('€')
+    const navigate = useNavigate()
 
     const donationTypes = ['One Time', 'Monthly', 'Yearly']
     const amounts = [10, 25, 50, 100, 200]
@@ -90,7 +91,7 @@ const DonationSection = () => {
                             <h4 className="text-lg font-semibold mb-1">Want to adopt a tortoise?</h4>
                             <p className=" text-sm">Browse our list of tortoises looking for a loving home.</p>
                         </div>
-                        <button className="bg-primary text-white text-sm px-4 py-2 rounded-full hover:bg-opacity-80 transition duration-300">
+                        <button onClick={()=> {navigate('/shop'); scrollTo(0,0)}} className="bg-primary text-white text-sm px-4 py-2 rounded-full hover:bg-opacity-80 transition duration-300">
                             Explore
                         </button>
                     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import desert from '../assets/desert.jpg';
+import { assets } from '../assets/assets'
 
 
 const careData = [
@@ -37,7 +38,9 @@ const careData = [
 
 const Care = () => {
   return (
-    <div className="relative py-20 px-4 md:px-20">
+    <div className="relative py-20 px-4 md:px-20" 
+                
+                style={{ backgroundImage: `url(${assets.ii})` }}>
       <h1 className="text-4xl text-primary font-courgette text-center mb-6">CARE</h1>
       <p className="text-center max-w-3xl mx-auto text-lg text-gray-700 mb-20">
         Discover everything you need to know to properly care for your tortoise. From habitat and food to enrichment and health.

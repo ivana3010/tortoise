@@ -100,6 +100,23 @@ import pancake4 from './pancake4.jpg'
 import fruitveg from './fruitveg.png'
 import grassflow from './grassflow.jpg'
 
+import desertShop from './desertShop.jpg'
+import egypShop from './egypShop.jpg'
+import galapagosShop from './galapagosShop.jpg'
+import greekShop from './greekShop.jpg'
+import hermannShop from './hermannShop.jpg'
+import indianShop from './indianShop.jpg'
+import leopardShop from './leopardShop.jpg'
+import pancakeShop from './pancakeShop.jpg'
+import ploughshareShop from './ploughshareShop.jpg'
+import radiantShop from './radiantShop.jpg'
+import redfShop from './redfShop.jpg'
+import russianShop from './russianShop.jpg'
+import spiderShop from './spiderShop.jpg'
+import sulcataShop from './sulcataShop.jpg'
+import yellowfShop from './yellowfShop.jpg'
+
+
 
 
 
@@ -124,6 +141,7 @@ export const tortoises = [
         image: herman,
         images:[herman, hermann1, hermann2, hermann4],
         imagePlace: hermannMap,
+        imageShop: hermannShop,
         scientificName: 'Testudo hermanni',
         lifespan: '50-100 years',
         size: '15-30 cm',
@@ -140,7 +158,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Near Threatened",
         habitatType: "Forests",
-        weight: "2-3 kg"
+        weight: "2-3 kg",
+        price: "70 €"
     },
     {
         _id: "2",
@@ -148,6 +167,7 @@ export const tortoises = [
         image: leopard,
         images:[leopard1, leopard2, leopard3, leopard4],
         imagePlace: leopardMap,
+        imageShop: leopardShop,
         description: "The Aldabra giant tortoise is native to the Aldabra Atoll in the Seychelles.",
         taxonomy: {
             Kingdom: "Animalia",
@@ -165,7 +185,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Least Concern",
         habitatType: "Savannas",
-        weight: "15-20 kg"
+        weight: "15-20 kg",
+        price: "90 €"
     },
     {
         _id: 'tor3',
@@ -173,6 +194,7 @@ export const tortoises = [
         image: redf,
         images:[redf1, redf2, redf3, redf4],
         imagePlace: redfootedMap,
+        imageShop: redfShop,
         scientificName: 'Chelonoidis carbonarius',
         lifespan: '50-60 years',
         size: '30-40 cm',
@@ -189,7 +211,8 @@ export const tortoises = [
         diet: "Omnivore",
         conservationStatus: "Vulnerable",
         habitatType: "Tropical Forests",
-        weight: "10-15 kg"
+        weight: "10-15 kg",
+        price: "110 €"
 
 
     },
@@ -199,6 +222,7 @@ export const tortoises = [
         image: indian,
         images:[indian, indian1, indian2, indian3],
         imagePlace: indianMap,
+        imageShop: indianShop,
         scientificName: 'Geochelone elegans',
         lifespan: '35-80 years',
         size: '25-30 cm',
@@ -215,7 +239,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Vulnerable",
         habitatType: "Dry Forests",
-        weight: "3-6 kg"
+        weight: "3-6 kg",
+        price: "100 €"
 
     },
     {
@@ -224,6 +249,7 @@ export const tortoises = [
         image: sulcata,
         images:[sulcata1, sulcata2, sulcata3, sulcata4],
         imagePlace: sulcataMap,
+        imageShop: sulcataShop,
         scientificName: 'Centrochelys sulcata',
         lifespan: '70-100 years',
         size: '60-80 cm',
@@ -240,10 +266,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Vulnerable",
         habitatType: "Savannahs",
-        weight: "30-50 kg"
-
-
-
+        weight: "30-50 kg",
+        price: "150 €"
     },
     {
         _id: 'tor6',
@@ -251,6 +275,7 @@ export const tortoises = [
         image: egyp,
         images:[egyp, egypt1, egypt2, egypt3],
         imagePlace: egyptMap,
+        imageShop: egypShop,
         scientificName: 'Testudo kleinmanni',
         lifespan: '50-70 years',
         size: '10-15 cm',
@@ -267,7 +292,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Critically Endangered",
         habitatType: "Arid Desert",
-        weight: "0.5 kg"
+        weight: "0.5 kg",
+        price: "90 €"
 
 
 
@@ -278,6 +304,7 @@ export const tortoises = [
         image: galapagos,
         images:[galapagos1, galapagos2, galapagos3, galapagos4],
         imagePlace: galapagosMap,
+        imageShop: galapagosShop,
         scientificName: 'Chelonoidis nigra',
         lifespan: '100-150 years',
         size: '120-150 cm',
@@ -294,7 +321,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Vulnerable",
         habitatType: "Volcanic Grasslands",
-        weight: "250-300 kg"
+        weight: "250-300 kg",
+        price: "200 €"
 
     },
     {
@@ -303,6 +331,7 @@ export const tortoises = [
         image: russian,
         images:[russian3, russian2, russian1, russian4],
         imagePlace: russianMap,
+        imageShop: russianShop,
         scientificName: 'Agrionemys horsfieldii',
         lifespan: '40-50 years',
         size: '15-25 cm',
@@ -319,7 +348,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Vulnerable",
         habitatType: "Arid Regions",
-        weight: "1-2 kg"
+        weight: "1-2 kg",
+        price: "70 €"
 
     },
     {
@@ -328,6 +358,7 @@ export const tortoises = [
         image: greek,
         images:[greek1, greek2, greek3, greek4],
         imagePlace: greekMap,
+        imageShop: greekShop,
         scientificName: 'Testudo graeca',
         lifespan: '50-90 years',
         size: '20-30 cm',
@@ -344,7 +375,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Vulnerable",
         habitatType: "Mediterranean Forests",
-        weight: "1-3 kg"
+        weight: "1-3 kg",
+        price: "70 €"
 
     },
     {
@@ -353,6 +385,7 @@ export const tortoises = [
         image: radiated,
         images:[radiant2, radiant3, radiant4, radiant1],
         imagePlace: radiatedMap,
+        imageShop: radiantShop,
         scientificName: 'Astrochelys radiata',
         lifespan: '50-100 years',
         size: '30-40 cm',
@@ -369,7 +402,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Critically Endangered",
         habitatType: "Dry Forests",
-        weight: "12-15 kg"
+        weight: "12-15 kg",
+        price: "150 €"
 
     },
     {
@@ -378,6 +412,7 @@ export const tortoises = [
         image: desert,
         images:[desert, desert1, desert2, desert3],
         imagePlace: desertMap,
+        imageShop: desertShop,
         scientificName: 'Gopherus agassizii',
         lifespan: '50-80 years',
         size: '25-40 cm',
@@ -394,7 +429,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Vulnerable",
         habitatType: "Deserts",
-        weight: "5-7 kg"
+        weight: "5-7 kg",
+        price: "100 €"
 
     },
     {
@@ -403,6 +439,7 @@ export const tortoises = [
         image: spider,
         images:[spider1, spider2, spider3, spider4], 
         imagePlace: spiderMap,
+        imageShop: spiderShop,
         scientificName: 'Pyxis arachnoides',
         lifespan: '40-70 years',
         size: '15-20 cm',
@@ -419,7 +456,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Critically Endangered",
         habitatType: "Dry Forests",
-        weight: "0.4-0.6 kg"
+        weight: "0.4-0.6 kg",
+        price: "180 €"
 
     },
     {
@@ -428,6 +466,7 @@ export const tortoises = [
         image: yellowf,
         images:[yellowf1, yellowf2, yellowf3, yellowf4],
         imagePlace: yellowfootedMap,
+        imageShop: yellowfShop,
         scientificName: 'Chelonoidis denticulatus',
         lifespan: '50-60 years',
         size: '35-45 cm',
@@ -444,7 +483,8 @@ export const tortoises = [
         diet: "Omnivore",
         conservationStatus: "Vulnerable",
         habitatType: "Tropical Rainforests",
-        weight: "15-20 kg"
+        weight: "15-20 kg",
+        price: "120 €"
 
     },
     {
@@ -453,6 +493,7 @@ export const tortoises = [
         image: plough,
         images:[plough2, plough1, plough3, plough4],
         imagePlace: ploughMap,
+        imageShop: ploughshareShop,
         scientificName: 'Astrochelys yniphora',
         lifespan: '80-100 years',
         size: '40-50 cm',
@@ -469,7 +510,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Critically Endangered",
         habitatType: "Dry Forests",
-        weight: "8-10 kg"
+        weight: "8-10 kg",
+        price: "190 €"
 
     },
     {
@@ -478,6 +520,7 @@ export const tortoises = [
         image: pancake,
         images:[pancake1, pancake2, pancake3, pancake4],
         imagePlace: pancakeMap,
+        imageShop: pancakeShop,
         scientificName: 'Malacochersus tornieri',
         lifespan: '30-50 years',
         size: '15-20 cm',
@@ -494,7 +537,8 @@ export const tortoises = [
         diet: "Herbivore",
         conservationStatus: "Critically Endangered",
         habitatType: "Rocky Outcrops",
-        weight: "0.5-1 kg"
+        weight: "0.5-1 kg",
+        price: "160 €"
 
     },
 ]
