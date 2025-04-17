@@ -1,61 +1,38 @@
 import React from 'react';
-import desert from '../assets/desert.jpg';
-import { assets } from '../assets/assets'
-
-
-const careData = [
-  {
-    title: 'Habitat Setup',
-    text: 'Ensure your tortoise has plenty of space, substrate, and hiding spots.',
-    image: desert,
-  },
-  {
-    title: 'Temperature & Lighting',
-    text: 'UVB lighting and heat lamps are crucial for their health and shell growth.',
-    image: desert,
-  },
-  {
-    title: 'Hydration',
-    text: 'Provide fresh water daily and occasional soaking.',
-    image: desert,
-  },
-  {
-    title: 'Balanced Diet',
-    text: 'Feed them leafy greens, vegetables, and limit fruits.',
-    image: desert,
-  },
-  {
-    title: 'Regular Checkups',
-    text: 'Visit an exotic vet yearly to ensure everything is fine.',
-    image: desert,
-  },
-  {
-    title: 'Enrichment',
-    text: 'Add logs, tunnels, and varying textures to their space.',
-    image: desert,
-  },
-];
+import { assets, careInfo } from '../assets/assets';
 
 const Care = () => {
   return (
-    <div className="relative py-7 px-4 md:px-20">
-      <h1 className="text-4xl text-primary font-courgette text-center mb-6">Care</h1>
-      <p className="text-center max-w-3xl mx-auto text-lg text-gray-700 mb-20">
-        Discover everything you need to know to properly care for your tortoise. From habitat and food to enrichment and health.
-      </p>
-      <div className="space-y-24 relative z-10">
-        {careData.map((item, index) => (
-          <div
-            key={index}
-            className={`flex flex-col md:flex-row items-center gap-10 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
-          >
-            <img src={item.image} alt={item.title} className="w-full md:w-1/3 rounded-xl shadow-lg" />
-            <div className="md:w-1/2 text-center md:text-left">
-              <h2 className="text-2xl font-bold text-primary mb-3">1.{item.title}</h2>
-              <p className="text-gray-700 text-lg leading-relaxed">{item.text}</p>
+    <div
+      className="relative w-full min-h-screen bg-contain bg-no-repeat bg-center"
+      style={{ backgroundImage: `url(${assets.slika})` }}
+    >
+      <div className="relative z-10 max-w-4xl mx-auto px-6 py-5">
+        <div className="mb-10 text-center">
+          <h2 className="text-4xl font-bold text-primary mb-4">Tortoise Care</h2>
+          <p className="text-primary font-courgette text-lg">
+            indoor environment 
+          </p>
+        </div>
+
+        <div className="space-y-8">
+          {careInfo.map((item) => (
+            <div
+              key={item.label}
+              className="bg-yellow-950 bg-opacity-80 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="flex items-center space-x-4 mb-3">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-12 h-12 rounded-full object-cover border-2 border-white"
+                />
+                <h3 className="text-2xl font-semibold text-white">{item.label}</h3>
+              </div>
+              <p className="text-white leading-relaxed">{item.text}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

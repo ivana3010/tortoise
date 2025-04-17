@@ -133,7 +133,7 @@ const Shop = () => {
                 <h2 className="text-lg font-semibold text-white mb-2">{item.price}</h2>
                 <div className='flex flex-row items-center space-x-1'>
                   <StyledRating
-                    defaultValue={4}
+                    defaultValue={item.rating}
                     readOnly
                     icon={<FavoriteIcon fontSize="small" />}
                     emptyIcon={<FavoriteBorderIcon fontSize="small" />}

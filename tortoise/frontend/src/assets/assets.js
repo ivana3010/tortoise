@@ -116,7 +116,14 @@ import spiderShop from './spiderShop.jpg'
 import sulcataShop from './sulcataShop.jpg'
 import yellowfShop from './yellowfShop.jpg'
 import me from './me.jpg'
-
+import slika from './slika.png'
+import slika2 from './slika2.png'
+import terrarium from './terrarium.png'
+import ceilingLamp from './ceilingLamp.png'
+import vegetable from './vegetable.png'
+import waterDrop from './waterDrop.png'
+import hibernation from './hibernation.png'
+import zzz from './zzz.png'
 
 
 
@@ -133,8 +140,38 @@ export const assets = {
     futer2,
     fruitveg,
     grassflow,
-    me
+    me,
+    slika,
+    slika2
 }
+
+export const careInfo = [
+    {
+        label: 'Habitat Setup',
+        text:'Creating the perfect terrarium for your tortoise is key to ensuring their comfort and well-being. The first thing to consider is the size of terrarium. Ensure that it is spacious enough for your tortoise to move around comfortably. A good rule of thumb is to provide at least 10 square feet of space for an adult tortoise. It’s important to use a mix of organic soil, coconut coir, and sand. This combination allows your tortoise to dig and burrow, which is essential for their natural behavior. Proper humidity is also critical, as it helps prevent shell pyramiding and supports hydration. Lightly mist the substrate and your tortoise’s shell daily. In your tortoise’s terrarium, you could include plants like dandelions, clover, and grasses. These are not only decorative, but also provide a source of food. Adding rocks and leaves will help create hiding spots and offer climbing opportunities, which will enrich the environment and keep your tortoise mentally stimulated.',
+        image: terrarium
+    },
+    {
+        label: 'Temperature & Lighting',
+        text:'UVB lighting is an essential component of your tortoise’s habitat. It mimics natural sunlight and helps them produce vitamin D3, which is necessary for calcium absorption and shell health. You should place a UVB bulb over the basking area to ensure your tortoise can bask directly underneath it. If possible, try to provide natural sunlight for your tortoise. Exposure to natural sunlight for 15-30 minutes a day is ideal for ensuring optimal UVB levels.',
+        image: ceilingLamp
+    },
+    {
+        label: 'Diet',
+        text:'Your tortoise’s diet plays a huge role in its overall health. If your tortoise is young, it should be fed daily, while adults can be fed every other day. You can find tips for a healthy tortoise diet on the Food page. Avoid feeding them high-protein foods  because this can cause health issues in the long run. In addition to regular food, you should provide calcium and vitamin D3 supplements to support their shell and bone health.',
+        image: vegetable
+    },
+    {
+        label: 'Hydration',
+        text:'Proper hydration is incredibly important for tortoises. A great way to ensure hydration is by soaking tortoise in shallow, lukewarm water for 15-30 minutes a few times a week. This process helps with digestion and hydration. In addition to soaking, always provide fresh water in a shallow dish in the terrarium. Be sure to change the water daily to prevent bacterial growth and ensure your tortoise has access to clean water at all times. It’s also essential to maintain proper humidity in the terrarium, aiming for a humidity level of 30-40%. This will help your tortoise remain hydrated and promote a healthy shell.',
+        image: waterDrop
+    },
+    {
+        label: 'Hibernation',
+        text:'Hibernation is a natural process for some tortoise species, though not all tortoises will hibernate. If your tortoise is one that does, it’s important to prepare them properly. Before hibernating, make sure your tortoise is healthy and has enough fat reserves to survive the period without food. During hibernation, keep the temperature of the area between 40-55°F (4.5-13°C), as this is the ideal range for most tortoises. Tortoises that are kept indoors are often hibernated in a controlled environment, such as a dedicated refrigerator used only for this purpose. The duration of hibernation can vary, but it typically lasts between 2 to 5 months. It’s important to monitor your tortoise’s health regularly during this time.Once your tortoise has emerged from hibernation, gradually warm them up and offer fresh water to help them rehydrate. It’s also a good idea to provide food at this stage to help them regain their strength.',     
+        image: hibernation
+    }
+]
 
 export const tortoises = [
     {
@@ -147,6 +184,7 @@ export const tortoises = [
         scientificName: 'Testudo hermanni',
         lifespan: '50-100 years',
         size: '15-30 cm',
+        rating: '5',
         location: 'Hermann’s tortoises live in southern Europe, from Balkan to southern France, southern and western Italy, Romania, and Turkey. They have also made their home on several islands in the Mediterranean, the Balearics, Sardinia, Sicily, and Corsica among them. They prefer evergreen Mediterranean oak forest, however, this forest in great part has disappeared.',
         taxonomy: {
             Kingdom: "Animalia",
@@ -183,6 +221,7 @@ export const tortoises = [
         scientificName: 'Stigmochelys pardalis',
         lifespan: '40-80 years',
         size: '30-50 cm',
+        rating: '4',
         location: 'Sub-Saharan Africa-Sudan, Namibia',
         diet: "Herbivore",
         conservationStatus: "Least Concern",
@@ -200,6 +239,7 @@ export const tortoises = [
         scientificName: 'Chelonoidis carbonarius',
         lifespan: '50-60 years',
         size: '30-40 cm',
+        rating: '5',
         location: 'South America - Amazon Basin, Grasslands, Forests',
         taxonomy: {
             Kingdom: "Animalia",
@@ -228,6 +268,7 @@ export const tortoises = [
         scientificName: 'Geochelone elegans',
         lifespan: '35-80 years',
         size: '25-30 cm',
+        rating: '4',
         location: 'India, Sri Lanka, Pakistan',
         taxonomy: {
             Kingdom: "Animalia",
@@ -255,6 +296,7 @@ export const tortoises = [
         scientificName: 'Centrochelys sulcata',
         lifespan: '70-100 years',
         size: '60-80 cm',
+        rating: '4',
         location: 'Sub-Saharan Africa - Sahara Desert, Sahel',
         taxonomy: {
             Kingdom: "Animalia",
@@ -281,6 +323,7 @@ export const tortoises = [
         scientificName: 'Testudo kleinmanni',
         lifespan: '50-70 years',
         size: '10-15 cm',
+        rating: '5',
         location: 'Egypt, Libya, Israel',
         taxonomy: {
             Kingdom: "Animalia",
@@ -310,6 +353,7 @@ export const tortoises = [
         scientificName: 'Chelonoidis nigra',
         lifespan: '100-150 years',
         size: '120-150 cm',
+        rating: '4',
         location: 'Galapagos Islands, Ecuador',
         taxonomy: {
             Kingdom: "Animalia",
@@ -337,6 +381,7 @@ export const tortoises = [
         scientificName: 'Agrionemys horsfieldii',
         lifespan: '40-50 years',
         size: '15-25 cm',
+        rating: '5',
         location: 'Central Asia - Russia, Afghanistan, Iran, Pakistan',
         taxonomy: {
             Kingdom: "Animalia",
@@ -364,6 +409,7 @@ export const tortoises = [
         scientificName: 'Testudo graeca',
         lifespan: '50-90 years',
         size: '20-30 cm',
+        rating: '5',
         location: 'Mediterranean Basin - North Africa, Europe, Middle East',
         taxonomy: {
             Kingdom: "Animalia",
@@ -391,6 +437,7 @@ export const tortoises = [
         scientificName: 'Astrochelys radiata',
         lifespan: '50-100 years',
         size: '30-40 cm',
+        rating: '5',
         location: 'Madagascar',
         taxonomy: {
             Kingdom: "Animalia",
@@ -418,6 +465,7 @@ export const tortoises = [
         scientificName: 'Gopherus agassizii',
         lifespan: '50-80 years',
         size: '25-40 cm',
+        rating: '4',
         location: 'Southwestern United States, Mexico',
         taxonomy: {
             Kingdom: "Animalia",
@@ -445,6 +493,7 @@ export const tortoises = [
         scientificName: 'Pyxis arachnoides',
         lifespan: '40-70 years',
         size: '15-20 cm',
+        rating: '4',
         location: 'Madagascar',
         taxonomy: {
             Kingdom: "Animalia",
@@ -472,6 +521,7 @@ export const tortoises = [
         scientificName: 'Chelonoidis denticulatus',
         lifespan: '50-60 years',
         size: '35-45 cm',
+        rating: '5',
         location: 'Amazon Basin, South America',
         taxonomy: {
             Kingdom: "Animalia",
@@ -499,6 +549,7 @@ export const tortoises = [
         scientificName: 'Astrochelys yniphora',
         lifespan: '80-100 years',
         size: '40-50 cm',
+        rating: '4',
         location: 'Madagascar',
         taxonomy: {
             Kingdom: "Animalia",
@@ -526,6 +577,7 @@ export const tortoises = [
         scientificName: 'Malacochersus tornieri',
         lifespan: '30-50 years',
         size: '15-20 cm',
+        rating: '5',
         location: 'Kenya, Tanzania',
         taxonomy: {
             Kingdom: "Animalia",
