@@ -15,7 +15,8 @@ export default {
       },
       fontFamily: {
         bungee: ['Bungee Shade', 'cursive'],
-        courgette: ['Courgette', 'sans-serif']
+        courgette: ['Courgette', 'sans-serif'],
+        rouge: ['"Rouge Script"', 'cursive'],
     },
     
     },

@@ -1,4 +1,4 @@
-import React, { forwardRef, useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { AppContext } from '../context/AppContext'
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -13,7 +13,7 @@ import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
 import { Box, Slider } from '@mui/material';
 
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+const BootstrapDialog = styled(Dialog)(({ theme }) => ({ //ovde zbog treperenja
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
   },
@@ -43,6 +43,7 @@ const Shop = () => {
     setValue(newValue);
   };
 
+  //zbog drugacijeg rejtinga
   const StyledRating = styled(Rating)({
     '& .MuiRating-icon': {
       fontSize: '2rem',

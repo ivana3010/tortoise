@@ -115,6 +115,7 @@ import russianShop from './russianShop.jpg'
 import spiderShop from './spiderShop.jpg'
 import sulcataShop from './sulcataShop.jpg'
 import yellowfShop from './yellowfShop.jpg'
+import me from './me.jpg'
 
 
 
@@ -131,7 +132,8 @@ export const assets = {
     futer,
     futer2,
     fruitveg,
-    grassflow
+    grassflow,
+    me
 }
 
 export const tortoises = [

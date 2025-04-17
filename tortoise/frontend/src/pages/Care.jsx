@@ -38,17 +38,11 @@ const careData = [
 
 const Care = () => {
   return (
-    <div className="relative py-20 px-4 md:px-20" 
-                
-                style={{ backgroundImage: `url(${assets.ii})` }}>
-      <h1 className="text-4xl text-primary font-courgette text-center mb-6">CARE</h1>
+    <div className="relative py-7 px-4 md:px-20">
+      <h1 className="text-4xl text-primary font-courgette text-center mb-6">Care</h1>
       <p className="text-center max-w-3xl mx-auto text-lg text-gray-700 mb-20">
         Discover everything you need to know to properly care for your tortoise. From habitat and food to enrichment and health.
       </p>
-
-      
-
-
       <div className="space-y-24 relative z-10">
         {careData.map((item, index) => (
           <div
@@ -57,7 +51,7 @@ const Care = () => {
           >
             <img src={item.image} alt={item.title} className="w-full md:w-1/3 rounded-xl shadow-lg" />
             <div className="md:w-1/2 text-center md:text-left">
-              <h2 className="text-2xl font-bold text-primary mb-3">{item.title}</h2>
+              <h2 className="text-2xl font-bold text-primary mb-3">1.{item.title}</h2>
               <p className="text-gray-700 text-lg leading-relaxed">{item.text}</p>
             </div>
           </div>
