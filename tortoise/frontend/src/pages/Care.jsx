@@ -4,10 +4,10 @@ import { assets, careInfo } from '../assets/assets';
 const Care = () => {
   return (
     <div
-      className="relative w-full min-h-screen bg-contain bg-no-repeat bg-center"
+      className="relative w-full min-h-screen md:bg-contain md:bg-no-repeat bg-center"
       style={{ backgroundImage: `url(${assets.slika})` }}
     >
-      <div className="relative z-10 max-w-4xl mx-auto px-6 py-5">
+      <div className="relative z-10 w-full max-w-screen-xl mx-auto px-4 md:px-10 lg:px-16 py-6">
         <div className="mb-10 text-center">
           <h2 className="text-4xl font-bold text-primary mb-4">Tortoise Care</h2>
           <p className="text-primary font-courgette text-lg">
@@ -29,7 +29,7 @@ const Care = () => {
                 />
                 <h3 className="text-2xl font-semibold text-white">{item.label}</h3>
               </div>
-              <p className="text-white leading-relaxed">{item.text}</p>
+              <p className="text-white leading-relaxed text-justify">{item.text}</p>
             </div>
           ))}
         </div>

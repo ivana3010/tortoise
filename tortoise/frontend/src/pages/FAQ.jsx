@@ -18,7 +18,7 @@ const FAQ = () => {
         src={assets.futer2}
         alt=""
       />
-      <div className='relative flex flex-col mx-auto space-y-6 w-2/3 '>
+      <div className='relative flex flex-col mx-auto space-y-6 w-full md:w-2/3 px-4 md:px-8 '>
         <h1 className='text-primary text-center font-medium text-2xl mb-4'>Frequently Asked Questions </h1>
         <Accordion >
           <AccordionSummary

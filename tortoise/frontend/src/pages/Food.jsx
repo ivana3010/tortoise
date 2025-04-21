@@ -7,12 +7,12 @@ const Food = () => {
 
   return (
     <div className="flex flex-col items-center my-10 space-y-9">
-      <h1 className="text-4xl font-semibold text-primary">What Do Tortoises Eat?</h1>
-      <p className="text-lg  max-w-2xl text-center">
+      <h1 className="text-4xl font-semibold text-primary text-center">What Do Tortoises Eat?</h1>
+      <p className="text-lg  max-w-2xl md:text-center text-justify">
         Tortoises have a plant-based diet, but different species prefer different types of food.
         Some enjoy fruits and vegetables, while others prefer grass and flowers. Click to learn more!
       </p>
-      <div className="grid grid-cols-2 gap-16">
+      <div className="md:grid md:grid-cols-2 md:gap-16 flex flex-col gap-9">
         <div className="relative w-60 h-60 flex items-center justify-center overflow-hidden rounded-lg">
           <img
             src={assets.fruitveg}

@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import Species from './pages/Species';
-import Login from './pages/Login';
 import Food from './pages/Food';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
@@ -23,7 +22,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/food" element={<Food />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/species" element={<Species />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />

@@ -57,11 +57,11 @@ const Shop = () => {
         <h1 className='font-courgette text-primary text-3xl text-center my-4'>Welcome to our web-shop!</h1>
         <img src={assets.tortoise} className='w-8 h-8' alt="" />
       </div>
-      <p className="text-center text-lg text-gray-600 my-4 max-w-3xl mx-auto">
+      <p className="md:text-center text-justify text-lg text-gray-600 my-4 max-w-3xl mx-auto">
         Welcome to the Tortoise World web-shop — your ultimate destination for everything tortoise-related! Whether you're a passionate tortoise enthusiast or a beginner looking to welcome your first shelled friend, we’ve got you covered. Our carefully curated collection includes a variety of beautiful tortoise species, essential care items, and high-quality food to ensure a healthy and happy life for your pet.
       </p>
 
-      <div className='flex flex-row  justify-center text-lg text-primary font-semibold items-center mt-5'>
+      <div className='flex flex-row  justify-center text-lg text-primary font-semibold items-center md:mt-5'>
         <Button variant="text" sx={{ color: '#784313', fontWeight: 500, fontSize: 17 }} onClick={handleClickOpen}>
           <AddIcon /> <p>Filter</p>
         </Button>
@@ -119,7 +119,7 @@ const Shop = () => {
       </div>
 
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 p-6  rounded-md">
+        <div className="md:grid flex flex-col gap-10 md:grid-cols-2 lg:grid-cols-3 md:gap-14 p-6  rounded-md">
           {tortoises.map((item) => (
             <div className="relative overflow-hidden group w-[280px] h-[320px] bg-primary bg-opacity-90 border border-primary rounded-md">
               <FavoriteBorderIcon className='absolute top-2 right-2 text-gray-700 hover:text-red-600 cursor-pointer z-10' />

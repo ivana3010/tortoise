@@ -199,7 +199,22 @@ export const tortoises = [
         conservationStatus: "Near Threatened",
         habitatType: "Forests",
         weight: "2-3 kg",
-        price: "70 €"
+        price: "70 €",
+        habits: [
+            {
+              title: "Daily Activity",
+              description: "Early riser! Loves sunny mornings and spends hours slowly exploring and basking."
+            },
+            {
+              title: "Hibernation",
+              description: "Every winter, it digs a cozy spot underground to hibernate for months like a true sleepyhead."
+            },
+            {
+              title: "Curiosity Level",
+              description: "Very curious and alert — often seen climbing over rocks or nudging objects just to see what’s there."
+            }
+          ]
+        
     },
     {
         _id: "2",
@@ -208,7 +223,6 @@ export const tortoises = [
         images:[leopard1, leopard2, leopard3, leopard4],
         imagePlace: leopardMap,
         imageShop: leopardShop,
-        description: "The Aldabra giant tortoise is native to the Aldabra Atoll in the Seychelles.",
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -222,12 +236,26 @@ export const tortoises = [
         lifespan: '40-80 years',
         size: '30-50 cm',
         rating: '4',
-        location: 'Sub-Saharan Africa-Sudan, Namibia',
+        location: 'Leopard tortoises are native to the savannas and dry grasslands of sub-Saharan Africa, from Sudan to Namibia. They are commonly found in areas with sparse trees and bushes, often in arid or semi-arid regions. These tortoises are well adapted to living in hot climates, and they can be found in regions with moderate rainfall where they prefer to burrow in soft soil and take shelter under bushes.',
         diet: "Herbivore",
         conservationStatus: "Least Concern",
         habitatType: "Savannas",
         weight: "15-20 kg",
-        price: "90 €"
+        price: "90 €",
+        habits: [
+            {
+              title: "Daily Activity",
+              description: "Most active during warm mornings, they love slow strolls and long sunbathing sessions."
+            },
+            {
+              title: "Social Behavior",
+              description: "Mostly solitary but tolerant — unless it’s mating season, then males show off and chase."
+            },
+            {
+              title: "Special Traits",
+              description: "Great walkers and decent swimmers! Known to wander for miles if given the chance."
+            }
+          ]
     },
     {
         _id: 'tor3',
@@ -240,7 +268,7 @@ export const tortoises = [
         lifespan: '50-60 years',
         size: '30-40 cm',
         rating: '5',
-        location: 'South America - Amazon Basin, Grasslands, Forests',
+        location: 'Red-footed tortoises are found in the rainforests and tropical woodlands of South America, particularly in countries such as Brazil, Venezuela, Colombia, and Ecuador. These tortoises thrive in humid, warm environments and are often found in areas near water sources like rivers, swamps, and wetland habitats. They prefer to stay in the underbrush of the forest, where they can easily access their plant-based diet and find shelter.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -254,9 +282,21 @@ export const tortoises = [
         conservationStatus: "Vulnerable",
         habitatType: "Tropical Forests",
         weight: "10-15 kg",
-        price: "110 €"
-
-
+        price: "110 €",
+        habits: [
+            {
+              title: "Social Behavior",
+              description: "Unlike most tortoises, they enjoy some social time and can recognize other individuals."
+            },
+            {
+              title: "Mobility",
+              description: "Fairly agile and not afraid to explore — even known to climb a bit!"
+            },
+            {
+              title: "Interaction with Humans",
+              description: "Popular as pets thanks to their chill personality and expressive little faces."
+            }
+          ]
     },
     {
         _id: 'tor4',
@@ -269,7 +309,7 @@ export const tortoises = [
         lifespan: '35-80 years',
         size: '25-30 cm',
         rating: '4',
-        location: 'India, Sri Lanka, Pakistan',
+        location: 'Indian star tortoises are native to the dry forests and scrublands of India and Sri Lanka. They are typically found in areas with sandy or rocky terrain, where they can hide under shrubs or burrow to protect themselves from the heat. These tortoises prefer warm climates and are often found in regions with seasonal rainfall, which helps nourish the plants they feed on. Indian star tortoises are commonly seen in open woodlands, grasslands, and arid plains.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -283,7 +323,21 @@ export const tortoises = [
         conservationStatus: "Vulnerable",
         habitatType: "Dry Forests",
         weight: "3-6 kg",
-        price: "100 €"
+        price: "100 €",
+        habits: [
+            {
+              title: "Shyness",
+              description: "Very shy and will hide in its shell at the slightest disturbance — true introverts of the tortoise world."
+            },
+            {
+              title: "Walking Style",
+              description: "Walks carefully with a graceful gait, thanks to its domed shell that prevents it from flipping over."
+            },
+            {
+              title: "Special Markings",
+              description: "Their starry shell not only looks cool, but helps them blend into grassy environments."
+            }
+          ]
 
     },
     {
@@ -297,7 +351,7 @@ export const tortoises = [
         lifespan: '70-100 years',
         size: '60-80 cm',
         rating: '4',
-        location: 'Sub-Saharan Africa - Sahara Desert, Sahel',
+        location: 'Sulcata tortoises, also known as African spurred tortoises, are native to the dry, arid regions of the Sahara Desert and surrounding areas in northern Africa. They are typically found in the savannas and scrublands of countries such as Chad, Sudan, and Niger. Sulcata tortoises are well adapted to harsh, hot climates and are often seen burrowing to escape the extreme daytime heat. Their habitat consists of dry grasslands and semi-desert regions with sparse vegetation.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -311,7 +365,21 @@ export const tortoises = [
         conservationStatus: "Vulnerable",
         habitatType: "Savannahs",
         weight: "30-50 kg",
-        price: "150 €"
+        price: "150 €",
+        habits: [
+            {
+              title: "Digging Tunnels",
+              description: "Loves to dig deep burrows to escape heat — some go as deep as 10 feet!"
+            },
+            {
+              title: "Big Appetite",
+              description: "Huge grazers — always munching on grass, hay, and leafy greens."
+            },
+            {
+              title: "Friendly Giant",
+              description: "Despite their size, they're gentle and often interact well with humans."
+            }
+          ]
     },
     {
         _id: 'tor6',
@@ -324,7 +392,7 @@ export const tortoises = [
         lifespan: '50-70 years',
         size: '10-15 cm',
         rating: '5',
-        location: 'Egypt, Libya, Israel',
+        location: 'Egyptian tortoises are native to the arid regions of northern Africa, particularly Egypt, Libya, and parts of Israel. They are found in coastal deserts and scrublands, where vegetation is sparse and the climate is dry and hot. Egyptian tortoises prefer sandy or rocky environments and are often found in areas with low rainfall. These tortoises have adapted to survive in extreme heat, and they tend to shelter in burrows during the hottest part of the day.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -338,9 +406,21 @@ export const tortoises = [
         conservationStatus: "Critically Endangered",
         habitatType: "Arid Desert",
         weight: "0.5 kg",
-        price: "90 €"
-
-
+        price: "90 €",
+        habits: [
+            {
+              title: "Extreme Heat Adaptation",
+              description: "Thrives in hot, dry areas and can handle extreme desert temperatures like a champ."
+            },
+            {
+              title: "Tiny But Tough",
+              description: "One of the smallest tortoises, but super resilient in harsh environments."
+            },
+            {
+              title: "Endangered Lifestyle",
+              description: "Rarely seen in the wild due to habitat loss — conservation efforts are crucial."
+            }
+          ]
 
     },
     {
@@ -354,7 +434,7 @@ export const tortoises = [
         lifespan: '100-150 years',
         size: '120-150 cm',
         rating: '4',
-        location: 'Galapagos Islands, Ecuador',
+        location: 'Galápagos tortoises are endemic to the Galápagos Islands, a volcanic archipelago located off the coast of Ecuador. These iconic tortoises can be found across the islands diverse habitats, from the dry, scrubby lowlands to the lush, humid highlands. Galápagos tortoises have adapted to different environments within the islands, and they are often seen grazing on grasses, cacti, and shrubs. The islands isolation has allowed them to thrive in their unique ecosystem.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -368,7 +448,21 @@ export const tortoises = [
         conservationStatus: "Vulnerable",
         habitatType: "Volcanic Grasslands",
         weight: "250-300 kg",
-        price: "200 €"
+        price: "200 €",
+        habits: [
+            {
+              title: "Slow Giants",
+              description: "They move slowly and deliberately, taking their time — they’ve got over 100 years to explore!"
+            },
+            {
+              title: "Basking Love",
+              description: "Can often be seen stretched out in the sun, soaking in the warmth for hours at a time."
+            },
+            {
+              title: "Long Naps",
+              description: "Loves to nap — sometimes sleeping up to 16 hours a day to conserve energy."
+            }
+          ]
 
     },
     {
@@ -382,7 +476,7 @@ export const tortoises = [
         lifespan: '40-50 years',
         size: '15-25 cm',
         rating: '5',
-        location: 'Central Asia - Russia, Afghanistan, Iran, Pakistan',
+        location: 'Russian tortoises are native to the dry, rocky hills and semi-arid steppes of Central Asia, including parts of Kazakhstan, Turkmenistan, Uzbekistan, and northern Iran. They are commonly found in areas with sparse vegetation and tolerate both cold winters and hot summers. Russian tortoises are well suited to arid environments, where they often burrow to avoid extreme temperatures and seek shelter in rocky outcrops or shrubs.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -396,7 +490,21 @@ export const tortoises = [
         conservationStatus: "Vulnerable",
         habitatType: "Arid Regions",
         weight: "1-2 kg",
-        price: "70 €"
+        price: "70 €",
+        habits: [
+            {
+              title: "Escape Artists",
+              description: "Surprisingly great diggers and climbers — known to escape from enclosures if given the chance!"
+            },
+            {
+              title: "Cool-Climate Adapted",
+              description: "Well adapted to cooler climates and often active when other tortoises would be hiding."
+            },
+            {
+              title: "Energetic Explorers",
+              description: "Very active during the day — loves walking around and investigating everything."
+            }
+          ]
 
     },
     {
@@ -410,7 +518,7 @@ export const tortoises = [
         lifespan: '50-90 years',
         size: '20-30 cm',
         rating: '5',
-        location: 'Mediterranean Basin - North Africa, Europe, Middle East',
+        location: 'Greek tortoises are found across southern Europe, including Greece, Turkey, and parts of the Mediterranean coast. They inhabit a variety of environments, from rocky hillsides and scrublands to open woodlands and grasslands. These tortoises prefer warm, dry habitats with plenty of hiding spots and vegetation. Greek tortoises are commonly found in areas with Mediterranean climates, where they can bask in the sun and forage for plants, grasses, and herbs.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -424,7 +532,21 @@ export const tortoises = [
         conservationStatus: "Vulnerable",
         habitatType: "Mediterranean Forests",
         weight: "1-3 kg",
-        price: "70 €"
+        price: "70 €",
+        habits: [
+            {
+              title: "Territorial Males",
+              description: "Males are known to ram and chase each other to show dominance — tiny warriors!"
+            },
+            {
+              title: "Basking Routine",
+              description: "Regularly climbs onto warm rocks to bask, especially in the early morning."
+            },
+            {
+              title: "Seasonal Behavior",
+              description: "May go into brumation (light hibernation) in cooler months to slow down metabolism."
+            }
+          ]
 
     },
     {
@@ -438,7 +560,7 @@ export const tortoises = [
         lifespan: '50-100 years',
         size: '30-40 cm',
         rating: '5',
-        location: 'Madagascar',
+        location: 'Radiated tortoises are native to the southern part of Madagascar, particularly in the dry spiny forests and scrublands of the island. They are found in regions that experience both wet and dry seasons, but their habitat is mostly characterized by dry, rocky terrain with sparse vegetation. These tortoises are often found in areas where they can bask in the sun during the day and seek shelter from extreme temperatures during the night.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -452,7 +574,21 @@ export const tortoises = [
         conservationStatus: "Critically Endangered",
         habitatType: "Dry Forests",
         weight: "12-15 kg",
-        price: "150 €"
+        price: "150 €",
+        habits: [
+            {
+              title: "Dazzling Shell",
+              description: "Has one of the most stunning shells with a radiant star pattern — total show-off!"
+            },
+            {
+              title: "Daytime Grazers",
+              description: "Most active in the morning and late afternoon, munching on grass and flowers."
+            },
+            {
+              title: "Group Living",
+              description: "Can live in small groups, especially during mating season — social butterflies of tortoises."
+            }
+          ]
 
     },
     {
@@ -466,7 +602,7 @@ export const tortoises = [
         lifespan: '50-80 years',
         size: '25-40 cm',
         rating: '4',
-        location: 'Southwestern United States, Mexico',
+        location: 'Desert tortoises are native to the Mojave and Sonoran Deserts of the southwestern United States and northwestern Mexico. They are well adapted to life in arid environments and are often found in dry, rocky desert regions with sparse vegetation. Desert tortoises spend much of their time in burrows, which provide refuge from extreme heat and cold. Their diet primarily consists of grasses, cacti, and other desert plants, and they are capable of surviving long periods without water.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -480,7 +616,21 @@ export const tortoises = [
         conservationStatus: "Vulnerable",
         habitatType: "Deserts",
         weight: "5-7 kg",
-        price: "100 €"
+        price: "100 €",
+        habits: [
+            {
+              title: "Burrow Masters",
+              description: "Can dig burrows over 10 feet long to escape the desert heat — survival pros!"
+            },
+            {
+              title: "Water Wizards",
+              description: "Stores water in its bladder and can reabsorb it — true desert adaptation."
+            },
+            {
+              title: "Slow & Solitary",
+              description: "Lives alone and moves slowly, but can walk over half a mile a day when exploring."
+            }
+          ]
 
     },
     {
@@ -494,7 +644,7 @@ export const tortoises = [
         lifespan: '40-70 years',
         size: '15-20 cm',
         rating: '4',
-        location: 'Madagascar',
+        location: 'Spider tortoises are found exclusively in the dry, arid regions of southwestern Madagascar, particularly in the spiny forests and scrublands. These tortoises thrive in habitats with sparse vegetation, where they can find shelter in the cracks and crevices of rocky outcrops. Their natural environment is characterized by a mix of dry, thorny bushes and open areas, where they can bask in the sun during the day. The habitat of the Spider tortoise is increasingly threatened by human activities, including deforestation and habitat destruction.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -508,7 +658,21 @@ export const tortoises = [
         conservationStatus: "Critically Endangered",
         habitatType: "Dry Forests",
         weight: "0.4-0.6 kg",
-        price: "180 €"
+        price: "180 €",
+        habits: [
+            {
+              title: "Rare & Reclusive",
+              description: "One of the rarest tortoises — lives a secretive life in Madagascar’s dry forests."
+            },
+            {
+              title: "Spider Pattern",
+              description: "Gets its name from the web-like pattern on its shell — nature's own artwork!"
+            },
+            {
+              title: "Seasonal Activity",
+              description: "Mostly active during rainy season — the rest of the year, it chills underground."
+            }
+          ]
 
     },
     {
@@ -522,7 +686,7 @@ export const tortoises = [
         lifespan: '50-60 years',
         size: '35-45 cm',
         rating: '5',
-        location: 'Amazon Basin, South America',
+        location: 'Yellow-footed tortoises are native to the tropical forests of South America, specifically in the Amazon Basin of Brazil, Bolivia, and Peru. These tortoises are primarily found in humid, lush forests near rivers and streams. They thrive in warm, wet environments and prefer to stay under dense tree cover, where they can stay cool and find their preferred diet of fruits, plants, and insects.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -536,7 +700,21 @@ export const tortoises = [
         conservationStatus: "Vulnerable",
         habitatType: "Tropical Rainforests",
         weight: "15-20 kg",
-        price: "120 €"
+        price: "120 €",
+        habits: [
+            {
+              title: "Jungle Ambler",
+              description: "Loves wandering around humid rainforests in South America — never in a rush!"
+            },
+            {
+              title: "Omnivorous Snacker",
+              description: "Eats everything from plants to fruits and even the occasional snail or worm."
+            },
+            {
+              title: "Colorful Legs",
+              description: "Recognizable by their bright yellow or orange scales on their legs — stylish walkers!"
+            }
+          ]
 
     },
     {
@@ -550,7 +728,7 @@ export const tortoises = [
         lifespan: '80-100 years',
         size: '40-50 cm',
         rating: '4',
-        location: 'Madagascar',
+        location: 'Ploughshare tortoises are critically endangered and are found only in a small area of Madagascar, primarily in the dry deciduous forests of the northwestern part of the island. They inhabit rocky, scrubby terrains and prefer the shelter of dense vegetation, where they can avoid the intense heat of the midday sun. These tortoises have a very limited range, and their habitat is increasingly threatened by human activity and deforestation.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -564,7 +742,21 @@ export const tortoises = [
         conservationStatus: "Critically Endangered",
         habitatType: "Dry Forests",
         weight: "8-10 kg",
-        price: "190 €"
+        price: "190 €",
+        habits: [
+            {
+              title: "Rare & Protected",
+              description: "Critically endangered and lives in a small area of Madagascar — highly protected."
+            },
+            {
+              title: "Gold Shield",
+              description: "Named after the plough-like gular scute on its shell — looks like a tiny warrior!"
+            },
+            {
+              title: "Slow Lifestyle",
+              description: "Moves slowly, spends time grazing and basking under the sun — slow and steady."
+            }
+          ]
 
     },
     {
@@ -578,7 +770,7 @@ export const tortoises = [
         lifespan: '30-50 years',
         size: '15-20 cm',
         rating: '5',
-        location: 'Kenya, Tanzania',
+        location: 'Pancake tortoises are native to East Africa, particularly in Kenya, Tanzania, and parts of southern Ethiopia. They are typically found in rocky, arid regions with scattered vegetation. These tortoises are known for their flat, flexible shells, which allow them to wedge themselves into crevices and rocky outcrops to avoid predators. Pancake tortoises often live in areas with sparse vegetation, including dry savannas and rocky hillsides, where they can hide in the cracks of boulders and cliffs.',
         taxonomy: {
             Kingdom: "Animalia",
             Phylum: "Chordata",
@@ -592,7 +784,21 @@ export const tortoises = [
         conservationStatus: "Critically Endangered",
         habitatType: "Rocky Outcrops",
         weight: "0.5-1 kg",
-        price: "160 €"
+        price: "160 €",
+        habits: [
+            {
+              title: "Flat & Fast",
+              description: "Unusually flat shell makes it faster and more agile than most tortoises."
+            },
+            {
+              title: "Rock Dwellers",
+              description: "Loves hiding in rocky crevices — their pancake shape fits perfectly!"
+            },
+            {
+              title: "Escape Artists",
+              description: "When threatened, they run and wedge themselves tightly into rocks — not easy to grab!"
+            }
+          ]
 
     },
 ]

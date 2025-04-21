@@ -23,19 +23,19 @@ const FruitVeg = () => {
   return (
     <div>
       <h1 className='text-center font-courgette font-semibold text-[28px] text-primary mb-5 tracking-wide'>Fruits & Vegetables</h1>
-        <div className="flex justify-center gap-6 mb-6">
+        <div className="flex flex-col md:flex-row justify-center gap-6 md:mb-6 mb-2">
           {["Safe to feed", "Occasionally", "Do not feed"].map((label) => (
             <button
               key={label}
               onClick={() => setSFilter(label === sFilter ? null : label)}
-              className={`min-w-[140px] text-primary font-normal text-lg rounded-full border border-primary px-6 py-2 transition duration-300 hover:bg-primary hover:text-white
+              className={`md:min-w-[140px] text-primary font-normal text-lg rounded-full border border-primary px-6 py-2 transition duration-300 hover:bg-primary hover:text-white
               ${sFilter === label ? 'bg-primary text-white' : 'opacity-90'}`}>
                 {label}
             </button>
           ))}
         </div>
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 p-6">
+          <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-14 p-6 flex flex-col gap-7">
             {filtered.map((item) => (
               <div className="relative w-[280px] h-[200px] overflow-hidden rounded-xl shadow-md group">
               <img

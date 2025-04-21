@@ -7,7 +7,7 @@ const Introduction = () => {
   const navigate = useNavigate()
   return (
     <div className="flex flex-col md:flex-row items-center justify-between bg-primary p-6 md:p-12 rounded-xl shadow-lg mt-8">
-      <div className="md:w-1/2 text-center md:text-left space-y-8">
+      <div className="md:w-1/2 text-center md:text-left space-y-4 md:space-y-8">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-[#f7e4bb]"
           initial={{ opacity: 0, y: -50 }}
@@ -16,7 +16,7 @@ const Introduction = () => {
         >
           Welcome to the Fascinating World of Tortoises
         </motion.h2>
-        <p className="text-lg text-[#f7e4bb]">
+        <p className="text-base md:text-lg text-[#f7e4bb]">
           Tortoises have been living on Earth for millions of years, and they have adapted to a variety of environments. Known for their slow pace and hard shells, they are resilient creatures that teach us about patience and survival.
         </p>
         <a href="#introduction" className="inline-block">
@@ -30,7 +30,7 @@ const Introduction = () => {
         </a>
 
       </div>
-      <div className="mt-6 md:mt-0 md:w-1/2 flex justify-center ml-10">
+      <div className="mt-6 md:mt-0 md:w-1/2 flex justify-center md:ml-10">
         <motion.img
           src={assets.header}
           alt="Hermann Tortoise"
