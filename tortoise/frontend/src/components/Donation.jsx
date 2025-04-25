@@ -17,9 +17,9 @@ const DonationSection = () => {
     }
 
     return (
-        <div className="md:py-16 py-6 md:px-20">
+        <div className="md:py-16 py-6 lg:px-20">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                <div className="bg-[#f7e4bb]  shadow-lg rounded-lg p-6 md:p-8 border-[2px] border-primary">
+                <div className="bg-[#f7e4bb]  shadow-lg rounded-lg p-6 lg:p-8 border-[2px] border-primary">
                     <h3 className="text-xl font-bold text-primary mb-4 text-center md:text-left">Choose a Donation</h3>
                     <div className="relative bg-primary bg-opacity-50 rounded-full flex items-center p-1 w-full max-w-sm mx-auto mb-6">
                         <div
@@ -83,7 +83,7 @@ const DonationSection = () => {
                             Your donation helps us protect and conserve tortoises around the world. With your support, we can rescue, rehabilitate, and release these incredible creatures back into their natural habitats.
                         </p>
                     </div>
-                    <div className=" text-primary flex items-center gap-4 bg-primary bg-opacity-10  md:p-4 hover:shadow-lg transition-shadow duration-300">
+                    <div className=" text-primary flex items-center gap-4 bg-primary bg-opacity-10  lg:p-4 hover:shadow-lg transition-shadow duration-300">
                         <div className=" text-3xl">
                             <img className='w-10 md:w-10' src={assets.tortoise} />
                         </div>

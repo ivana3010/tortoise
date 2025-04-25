@@ -9,10 +9,9 @@ const Contact = () => {
   return (
     <div>
       <h1 className='font-courgette text-primary text-3xl my-10 flex flex-row justify-center'>About me & Contact</h1>
-      <div className='flex flex-col md:flex-row md:items-start gap-10 mx-auto max-w-4xl'>
+      <div className='flex flex-col lg:flex-row lg:items-start md:items-center gap-10 mx-auto max-w-4xl'>
         <p className='text-orange-950 leading-8 text-justify'>My name is Ivana. I’m from Subotica and I’m a master’s student at the Faculty of Technical Sciences in Novi Sad. This website is part of my personal portfolio, but more importantly — it's a heartfelt tribute to something I truly love - tortoises. As a proud owner of a little tortoise Kornelija, in his honor, I created this website. I wanted to create a space where I could express that love in a meaningful way. While building this site, I learned a lot about different tortoise species, their lives, and their habits.
           Hope you learned something new too and maybe even fallen in love with tortoises just a little more! <span className='text-primary font-courgette flex justify-end text-xl font-thin'>Ivana Gabric</span> </p>
-          
         <img className='w-80 h-auto shadow-md object-cover' src={assets.me} alt="" />
       </div>
       <div>

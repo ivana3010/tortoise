@@ -29,7 +29,7 @@ const OneTortoise = () => {
         }
     }
     return (
-        <div className="space-y-10">
+        <div className="space-y-12">
             <div className="relative w-full flex flex-col items-center">
                 <svg
                     className="w-full max-w-[600px] h-[120px] md:h-[150px]"
@@ -47,9 +47,7 @@ const OneTortoise = () => {
             </div>
 
             <div className="flex justify-center">
-                <div className="w-full max-w-6xl bg-primary bg-opacity-10 p-6 rounded-xl shadow-md flex flex-col md:flex-row gap-6">
-
-
+                <div className="w-full max-w-6xl bg-primary bg-opacity-10 p-6 rounded-xl shadow-md flex flex-col lg:flex-row gap-6">
                     <div className="flex-1 space-y-4 bg-primary bg-opacity-25 p-4 rounded-lg">
                         <div className="flex items-center gap-2 mt-2">
                             <img src="/tortoise.svg" alt="Taxonomy" className="w-6 h-6" />
@@ -111,7 +109,7 @@ const OneTortoise = () => {
                 </div>
             </div>
             <h1 className=' flex justify-center font-courgette text-4xl text-primary'>Where do I live?</h1>
-            <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="flex flex-col lg:flex-row items-center gap-6">
                 <div className="flex-1">
                     <img className="border border-primary rounded-md w-full h-full object-cover" src={tortoise.imagePlace} alt="" />
                 </div>

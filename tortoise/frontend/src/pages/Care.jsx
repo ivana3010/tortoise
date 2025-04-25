@@ -4,7 +4,7 @@ import { assets, careInfo } from '../assets/assets';
 const Care = () => {
   return (
     <div
-      className="relative w-full min-h-screen md:bg-contain md:bg-no-repeat bg-center"
+      className="relative w-full min-h-screen lg:bg-contain lg:bg-no-repeat bg-center"
       style={{ backgroundImage: `url(${assets.slika})` }}
     >
       <div className="relative z-10 w-full max-w-screen-xl mx-auto px-4 md:px-10 lg:px-16 py-6">
