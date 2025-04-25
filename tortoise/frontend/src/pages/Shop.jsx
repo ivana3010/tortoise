@@ -93,10 +93,9 @@ const Shop = () => {
                 <option value="large">90-150 years</option>
               </select>
             </div>
-            <Box sx={{ width: 300 }}>
+            <Box sx={{ width: 250 }}>
               <label className="text-primary font-semibold mb-2 block">Price (€)</label>
               <Slider
-              
                 value={value}
                 onChange={handleChange}
                 valueLabelDisplay="auto"

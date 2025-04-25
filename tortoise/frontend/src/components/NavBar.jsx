@@ -65,9 +65,9 @@ const NavBar = () => {
                             <img className='w-2.5' src={assets.dropdown_icon} alt="" />
                             <div className='absolute top-0 right-0 pt-10 text-base font-medium text-primary z-20 hidden group-hover:block '>
                                 <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
-                                    <p onClick={() => navigate('faq')} className='hover:text-black cursor-pointer'>FAQ</p>
-                                    <p onClick={() => navigate('contact')} className='hover:text-black cursor-pointer'>About & Contact</p>
-                                    <p onClick={() => navigate('shop')} className='hover:text-black cursor-pointer'>Shop</p>
+                                    <p onClick={() => {navigate('faq');scrollTo(0,0)}} className='hover:text-black cursor-pointer'>FAQ</p>
+                                    <p onClick={() => {navigate('contact');scrollTo(0,0)}} className='hover:text-black cursor-pointer'>About & Contact</p>
+                                    <p onClick={() => {navigate('shop');scrollTo(0,0)}} className='hover:text-black cursor-pointer'>Shop</p>
                                 </div>
                             </div>
                         </div>
@@ -78,10 +78,10 @@ const NavBar = () => {
                         <img className='w-7' onClick={() => setShowMenu(false)} src={assets.cross_icon} alt="" />
                     </div>
                     <ul className='flex flex-col items-center gap-10 mt-5 text-lg font-semibold text-primary'>
-                        <NavLink to='/' onClick={() => setShowMenu(false)}><p>HOME</p></NavLink>
-                        <NavLink to='/food' onClick={() => setShowMenu(false)}><p>FOOD</p></NavLink>
-                        <NavLink to='/species' onClick={() => setShowMenu(false)}><p>SPECIES</p></NavLink>
-                        <NavLink to='/care' onClick={() => setShowMenu(false)}><p>CARE</p></NavLink>
+                        <NavLink to='/'  onClick={() => { setShowMenu(false); window.scrollTo(0, 0); }}><p>HOME</p></NavLink>
+                        <NavLink to='/food' onClick={() => { setShowMenu(false); window.scrollTo(0, 0); }}><p>FOOD</p></NavLink>
+                        <NavLink to='/species' onClick={() => { setShowMenu(false); window.scrollTo(0, 0); }}><p>SPECIES</p></NavLink>
+                        <NavLink to='/care' onClick={() => { setShowMenu(false); window.scrollTo(0, 0); }}><p>CARE</p></NavLink>
                     </ul>
                 </div>
             </div>

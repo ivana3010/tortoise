@@ -98,7 +98,7 @@ const OneTortoise = () => {
                                     <span className="font-semibold text-primary w-[200px]">Conservation Status:</span>
                                     <div className="relative ml-[-15px]">
                                         <div className={`w-4 h-4 rounded-full ${dotColor(tortoise.conservationStatus)}`} />
-                                        <span className="hidden group-hover:block absolute text-[14px] bg-primary text-white p-1 rounded-lg mt-1 left-0 w-max z-10">
+                                        <span className="hidden group-hover:block absolute text-[14px] bg-primary text-white p-1 rounded-lg mt-1 -left-9 w-max z-10">
                                             {tortoise.conservationStatus}
                                         </span>
                                     </div>
