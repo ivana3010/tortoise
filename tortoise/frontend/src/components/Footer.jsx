@@ -9,7 +9,7 @@ import { Checkbox, TextField } from '@mui/material';
 const Footer = () => {
     return (
         <div
-            className='relative rounded-lg mt-10 px-6 pt-9 bg-cover bg-center'
+            className='relative rounded-lg mt-8 px-6 pt-5 lg:pt-10 bg-cover bg-center'
             style={{ backgroundImage: `url(${assets.futer})` }}
         >
             <div>
@@ -24,7 +24,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col items-center md:items-start md:ml-14 gap-3 md:gap-4 text-sm font-medium mt-6 md:mt-0">
+                    <div className="flex flex-col items-center md:items-start md:ml-14 gap-3 md:gap-4 text-sm font-medium mt-7 md:mt-0">
                         <a href="/" className="hover:underline">Home</a>
                         <a href="/care" className="hover:underline">Care</a>
                         <a href="/food" className="hover:underline">Food</a>
@@ -32,7 +32,7 @@ const Footer = () => {
                         <a href="/contact" className="hover:underline">Contact</a>
                     </div>
 
-                    <div className='flex flex-col items-center md:items-start text-center md:text-left gap-2 mt-10 md:mt-4'>
+                    <div className='flex flex-col items-center md:items-start text-center md:text-left gap-2 mt-8 md:mt-4'>
                         <p className='font-semibold text-base text-orange-950'>Join our online community</p>
                         <div className='flex flex-col sm:flex-row w-full gap-3'>
                             <TextField
@@ -52,7 +52,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-10'>
+                <div className='mt-7'>
                     <hr className='border-gray-300' />
                     <p className='text-sm text-center text-orange-950 p-3'>© 2025 Tortoise World - All Rights Reserved.</p>
                 </div>

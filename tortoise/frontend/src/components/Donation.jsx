@@ -45,8 +45,8 @@ const DonationSection = () => {
                             <button
                                 key={amount}
                                 className={`px-4 py-2 rounded-full text-sm font-bold ${customAmount === amount
-                                        ? 'bg-primary text-white'
-                                        : 'bg-primary bg-opacity-50 text-white hover:bg-primary hover:text-white transition-all'
+                                    ? 'bg-primary text-white'
+                                    : 'bg-primary bg-opacity-50 text-white hover:bg-primary hover:text-white transition-all'
                                     }`}
                                 onClick={() => handleAmountClick(amount)}
                             >
@@ -83,17 +83,30 @@ const DonationSection = () => {
                             Your donation helps us protect and conserve tortoises around the world. With your support, we can rescue, rehabilitate, and release these incredible creatures back into their natural habitats.
                         </p>
                     </div>
-                    <div className=" text-primary flex items-center gap-4 bg-primary bg-opacity-10  lg:p-4 hover:shadow-lg transition-shadow duration-300">
-                        <div className=" text-3xl">
-                            <img className='w-10 md:w-10' src={assets.tortoise} />
+                    <div className="text-primary bg-primary bg-opacity-10 px-4 py-4 hover:shadow-lg transition-shadow duration-300">
+                        <div className="flex flex-col lg:flex-row items-center gap-3">
+                            <div className="text-3xl">
+                                <img className="w-10 md:w-10" src={assets.tortoise} />
+                            </div>
+                            <div className="flex-1 text-center lg:text-left">
+                                <h4 className="text-lg font-semibold mb-1 whitespace-nowrap">
+                                    Want to adopt a tortoise?
+                                </h4>
+                                <p className="text-sm">
+                                    Browse our list of tortoises looking for a loving home.
+                                </p>
+                            </div>
+                            <div className="mt-2 lg:mt-0 lg:ml-auto">
+                                <button
+                                    onClick={() => {
+                                        navigate('/shop');
+                                        scrollTo(0, 0);
+                                    }}
+                                    className="bg-primary text-white text-sm px-4 py-2 rounded-full hover:bg-opacity-80 transition duration-300">
+                                    Explore
+                                </button>
+                            </div>
                         </div>
-                        <div className="flex-1">
-                            <h4 className="text-lg font-semibold mb-1">Want to adopt a tortoise?</h4>
-                            <p className=" text-sm">Browse our list of tortoises looking for a loving home.</p>
-                        </div>
-                        <button onClick={()=> {navigate('/shop'); scrollTo(0,0)}} className="bg-primary text-white text-sm px-4 py-2 rounded-full hover:bg-opacity-80 transition duration-300">
-                            Explore
-                        </button>
                     </div>
 
                 </div>

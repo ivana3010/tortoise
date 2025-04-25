@@ -9,8 +9,8 @@ const Care = () => {
     >
       <div className="relative z-10 w-full max-w-screen-xl mx-auto px-4 md:px-10 lg:px-16 py-6">
         <div className="mb-10 text-center">
-          <h2 className="text-4xl font-bold text-primary mb-4">Tortoise Care</h2>
-          <p className="text-primary font-courgette text-lg">
+          <h2 className="text-4xl font-bold lg:text-primary text-yellow-950 mb-4">Tortoise Care</h2>
+          <p className="lg:text-primary text-yellow-950 font-courgette text-lg">
             indoor environment 
           </p>
         </div>

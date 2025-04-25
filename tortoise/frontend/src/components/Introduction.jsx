@@ -3,9 +3,9 @@ import { assets } from '../assets/assets'
 
 const Introduction = () => {
   return (
-    <div id="introduction" className="pt-20 pb-10">
+    <div id="introduction" className="pt-12 pb-5">
       <div className="max-w-screen-lg mx-auto text-justify md:text-center ">
-        <div className="flex items-center justify-center space-x-4">
+        <div className="flex items-center justify-center space-x-2 md:space-x-4 whitespace-nowrap">
           <img className='w-8 md:w-10' src={assets.tortoise} alt="Tortoise" />
           <h2 className="text-center text-2xl md:text-3xl font-semibold text-primary">Introduction to Tortoises</h2>
         </div>

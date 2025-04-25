@@ -53,7 +53,7 @@ const Shop = () => {
 
   return (
     <div>
-      <div className='flex flex-row items-center justify-center space-x-4'>
+      <div className='flex flex-row items-center justify-center md:space-x-3'>
         <h1 className='font-courgette text-primary text-3xl text-center my-4'>Welcome to our web-shop!</h1>
         <img src={assets.tortoise} className='w-8 h-8' alt="" />
       </div>

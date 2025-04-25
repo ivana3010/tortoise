@@ -46,10 +46,10 @@ const OneTortoise = () => {
                 <p className="mt-[-40px] text-primary font-courgette text-2xl md:text-3xl">About me</p>
             </div>
 
-            <div className="flex justify-center">
-                <div className="w-full max-w-6xl bg-primary bg-opacity-10 p-6 rounded-xl shadow-md flex flex-col lg:flex-row gap-6">
-                    <div className="flex-1 space-y-4 bg-primary bg-opacity-25 p-4 rounded-lg">
-                        <div className="flex items-center gap-2 mt-2">
+            <div className="flex justify-center overflow-scroll">
+                <div className="md:min-w-full  w-full lg:max-w-[900px] xl:max-w-6xl bg-primary bg-opacity-10 p-6 rounded-xl shadow-md flex flex-col md:flex-row gap-6 items-stretch">
+                    <div className="flex-1 space-y-4 bg-primary bg-opacity-25 p-4 rounded-lg ">
+                        <div className="flex items-center gap-2 mt-2 ">
                             <img src="/tortoise.svg" alt="Taxonomy" className="w-6 h-6" />
                             <h3 className="text-xl font-bold text-primary">Taxonomy</h3>
                         </div>
@@ -70,7 +70,7 @@ const OneTortoise = () => {
                             slidesPerView={1}
                             pagination={{ clickable: true }}
                             navigation
-                            className="rounded-lg shadow-lg overflow-hidden w-full max-w-[500px] mx-auto"
+                            className="rounded-lg shadow-lg overflow-hidden w-full  max-w-[500px]  md:max-w-[400px]  xl:max-w-[500px] mx-auto"
                         >
                             {tortoise.images.map((img, index) => (
                                 <SwiperSlide key={index} className="flex justify-center items-center">
