@@ -17,7 +17,9 @@ const NavBar = () => {
                             ? 'bg-primary text-white'
                             : ''  
                         }`
-                    } to='/' >
+                    }
+                    onClick={() => window.scrollTo(0, 0)}
+                     to='/' >
                     <li >HOME</li>
 
                 </NavLink>
@@ -27,7 +29,9 @@ const NavBar = () => {
                             ? 'bg-primary text-white'
                             : ''  
                         }`
-                    }  to='/food'>
+                    }
+                    onClick={() => window.scrollTo(0, 0)} 
+                     to='/food'>
                     <li>FOOD</li>
                 </NavLink>
 
@@ -36,7 +40,9 @@ const NavBar = () => {
                             ? 'bg-primary text-white'
                             : ''  
                         }`
-                    } to='/species'>
+                    }
+                    onClick={() => window.scrollTo(0, 0)}
+                    to='/species'>
                     <li>SPECIES</li>
                 </NavLink>
 
@@ -45,7 +51,9 @@ const NavBar = () => {
                             ? 'bg-primary text-white'
                             : ''  
                         }`
-                    } to='/care'>
+                    }
+                    onClick={() => window.scrollTo(0, 0)} 
+                    to='/care'>
                     <li>CARE</li>
                 </NavLink>
             </ul>
