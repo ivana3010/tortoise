@@ -18,6 +18,9 @@ const App = () => {
     <div className="bg-primary py-10">
       <div className="bg-primary"></div>
       <div className="bg-[#f7e4bb] mx-auto px-20 pt-4 max-w-7xl shadow-[0_0_10px_4px_rgba(10,10,10,0.6)]">
+        {/* or
+        <div className="bg-primary fixed top-0 left-0 w-full h-full flex items-center justify-center py-6">
+        <div className="bg-[#f7e4bb] w-full max-w-7xl h-full max-h-full overflow-y-auto shadow-[0_0_10px_4px_rgba(10,10,10,0.6)] px-4 md:px-20 pt-4">*/}
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />

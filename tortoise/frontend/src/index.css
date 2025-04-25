@@ -14,3 +14,7 @@
         @apply text-white bg-primary p-3 rounded
     }
 }
+html, body, #root {
+    height: 100%;
+    margin: 0;
+  }
