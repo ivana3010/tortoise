@@ -30,7 +30,7 @@ const OneTortoise = () => {
         }
     }
     return (
-        <div className="space-y-12">
+        <div className="space-y-12 overflow-x-hidden">
             <div className="relative w-full flex flex-col items-center">
                 <svg
                     className="w-full max-w-[600px] h-[120px] md:h-[150px]"
@@ -47,7 +47,7 @@ const OneTortoise = () => {
                 <p className="mt-[-40px] text-primary font-courgette text-2xl md:text-3xl">About me</p>
             </div>
 
-            <div className="flex justify-center overflow-scroll">
+            <div className="flex justify-center overflow-x-auto overflow-y-hidden">
                 <div className="md:min-w-full  w-full lg:max-w-[900px] xl:max-w-6xl bg-primary bg-opacity-10 p-6 rounded-xl shadow-md flex flex-col md:flex-row gap-6 items-stretch">
                     <div className="flex-1 space-y-4 bg-primary bg-opacity-25 p-4 rounded-lg ">
                         <div className="flex items-center gap-2 mt-2 ">
