@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Checkbox, TextField } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -25,11 +26,11 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col items-center md:items-start md:ml-14 gap-3 md:gap-4 text-sm font-medium mt-7 md:mt-0">
-                        <a href="/" className="hover:underline">Home</a>
-                        <a href="/care" className="hover:underline">Care</a>
-                        <a href="/food" className="hover:underline">Food</a>
-                        <a href="/contact" className="hover:underline">About</a>
-                        <a href="/contact" className="hover:underline">Contact</a>
+                        <NavLink onClick={() => window.scrollTo(0, 0)} to='/'  className="hover:underline">Home</NavLink>
+                        <NavLink onClick={() => window.scrollTo(0, 0)} to='care' className="hover:underline">Care</NavLink>
+                        <NavLink onClick={() => window.scrollTo(0, 0)} to='/food' className="hover:underline">Food</NavLink>
+                        <NavLink onClick={() => window.scrollTo(0, 0)} to='/contact' className="hover:underline">About</NavLink>
+                        <NavLink onClick={() => window.scrollTo(0, 0)} to='/shop' className="hover:underline">Shop</NavLink>
                     </div>
 
                     <div className='flex flex-col items-center md:items-start text-center md:text-left gap-2 mt-8 md:mt-4'>

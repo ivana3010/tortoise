@@ -28,7 +28,7 @@ const FruitVeg = () => {
             <button
               key={label}
               onClick={() => setSFilter(label === sFilter ? null : label)}
-              className={`md:min-w-[140px] text-primary font-normal text-lg rounded-full border border-primary px-6 py-2 transition duration-300 hover:bg-primary hover:text-white
+              className={`md:min-w-[140px] text-primary font-normal text-lg rounded-full border border-primary px-6 py-2 transition duration-300 md:hover:bg-primary md:hover:text-white
               ${sFilter === label ? 'bg-primary text-white' : 'opacity-90'}`}>
                 {label}
             </button>

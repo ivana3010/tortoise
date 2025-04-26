@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import InfoIcon from '@mui/icons-material/Info';
 
 const OneTortoise = () => {
     const { tortoises } = useContext(AppContext)
@@ -80,9 +81,9 @@ const OneTortoise = () => {
                         </Swiper>
                     </div>
                     <div className="flex-1 space-y-4 mt-6">
-                        <div className="flex items-center gap-2">
+                        <div className="flex flex-row items-center gap-2">
                             <span className="text-primary text-2xl">
-                                🛈
+                                <InfoIcon />
                             </span>
                             <h3 className="text-xl font-bold text-primary">General Info</h3>
                         </div>

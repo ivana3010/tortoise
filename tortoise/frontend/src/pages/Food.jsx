@@ -33,7 +33,7 @@ const Food = () => {
             className="absolute w-full h-full object-cover opacity-50"
           />
           <button
-            onClick={() => navigate('/grassflower')}
+            onClick={() => {navigate('/grassflower');scrollTo(0,0)}}
             className="relative bg-primary text-white px-6 py-3 rounded-lg hover:scale-105 transition-all duration-300"
           >
             Grass & Flowers
